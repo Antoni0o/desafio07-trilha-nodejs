@@ -1,11 +1,5 @@
 import { document } from '../utils/dynamodbClient';
 
-interface ICreateTodo {
-  id: string;
-  title: string;
-  deadline: string;
-}
-
 export const handle = async (event) => {
   const { id } = event.pathParameters;
 
